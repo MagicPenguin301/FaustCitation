@@ -69,7 +69,8 @@ class Citation:
             return f"„{self.word}“. In: <em>{self.dict_name[0:l]}</em>{self.dict_name[l:]}, {self.version}. {self.start_page}. {self.website}. Stand: {self.date}."
         elif self.source == Source.ADE:
             return f"„{self.word}“. In: Johann Christoph Adelung(Hrsg.): <em>{self.dict_name[0:l]}</em>{self.dict_name[l:]}, {self.version}. {self.start_page}. {self.website}. Stand: {self.date}."
-
+        else:
+            return ""
 
 if __name__ == "__main__":
     c = Citation()
