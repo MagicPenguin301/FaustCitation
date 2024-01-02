@@ -38,7 +38,7 @@ class Citation:
             if re.search(r"n.|m.|f.", pos):
                 self.word = self.word[0].upper() + self.word[1:].lower()
             else:
-                self.word = self.word.upper()
+                self.word = self.word.lower()
         # source
         for item in SOURCE_NAMES.items():
             reg = fr"({item[1]}.*)(, Version)"
